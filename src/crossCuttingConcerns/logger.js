@@ -1,7 +1,12 @@
 export class BaseLogger{
-    log(data){
-        console.log("Default logger : ", data)
+    constructor(name){
+        this.__name = name;
     }
+
+    logDatabase(log){
+        throw new Error("Not logged.");
+    }
+
 }
 
 
